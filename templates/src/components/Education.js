@@ -39,13 +39,14 @@ function Education() {
     const [education, setEdu] = useState();
 
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/api/education/") 
-            .then(res => {
-                setEdu(res.data);
-            })
+        // axios.get("http://127.0.0.1:8000/api/education/") 
+        //     .then(res => {
+        //         setEdu(res.data);
+        //     })
         axios.get("https://ayushpatraportfolio.herokuapp.com/api/education/") 
         .then(res => {
             setEdu(res.data);
+            console.log(res.data)
         })
             
     }, [])

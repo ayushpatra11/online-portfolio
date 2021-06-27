@@ -43,7 +43,7 @@ const Internship = styled(motion.div)`
 function Internships() {
     const [internships, setInternships]= useState();
     useEffect(() =>{
-        axios.get("http://127.0.0.1:8000/api/internships/") 
+        axios.get("https://ayushpatraportfolio.herokuapp.com/api/internships/") 
             .then(res => {
                 setInternships(res.data);
             })
