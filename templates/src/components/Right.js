@@ -16,6 +16,8 @@ const Container = styled(motion.div)`
     @media screen and (max-width: 768px){
         width: 95%;
         ${'' /* overflow-y: none; */}
+        overflow-y: auto;
+        height:auto;
     }
 
     ::-webkit-scrollbar {
