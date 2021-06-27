@@ -43,6 +43,11 @@ function Education() {
             .then(res => {
                 setEdu(res.data);
             })
+        axios.get("https://ayushpatraportfolio.herokuapp.com/api/education/") 
+        .then(res => {
+            setEdu(res.data);
+        })
+            
     }, [])
 
     var delay=0.5;
